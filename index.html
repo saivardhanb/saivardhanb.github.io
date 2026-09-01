@@ -11,12 +11,12 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
@@ -34,7 +34,6 @@
         </a>
 
         <nav id="navMenu">
-
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
@@ -42,7 +41,6 @@
             <a href="#experience">Experience</a>
             <a href="#certifications">Certifications</a>
             <a href="#contact">Contact</a>
-
         </nav>
 
         <button class="menu-btn" id="menuBtn">
@@ -61,6 +59,11 @@
     <div class="hero-bg"></div>
 
     <div class="hero-content">
+
+        <div class="profile-image">
+            <img src="images/profile.jpg"
+                 alt="Bathula Sai Vardhan">
+        </div>
 
         <p class="small-heading">
             HELLO, I'M
@@ -88,8 +91,16 @@
                 View Projects
             </a>
 
+            <a href="resume/Sai_Vardhan_Resume.pdf"
+               target="_blank"
+               class="btn secondary-btn">
+                <i class="fas fa-file-pdf"></i>
+                Resume
+            </a>
+
             <a href="https://github.com/saivardhanb"
                target="_blank"
+               rel="noopener noreferrer"
                class="btn secondary-btn">
                 <i class="fab fa-github"></i>
                 GitHub
@@ -100,18 +111,28 @@
         <div class="social-links">
 
             <a href="https://github.com/saivardhanb"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="GitHub">
+
                 <i class="fab fa-github"></i>
+
             </a>
 
-            <!-- Replace with your actual LinkedIn URL -->
-            <a href="https://www.linkedin.com/"
-               target="_blank">
+            <a href="https://www.linkedin.com/in/sai-vardhan-bathula-2b511b36b/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="LinkedIn">
+
                 <i class="fab fa-linkedin"></i>
+
             </a>
 
-            <a href="mailto:saivardhanbathula1@gmail.com">
+            <a href="mailto:saivardhanbathula1@gmail.com"
+               aria-label="Email">
+
                 <i class="fas fa-envelope"></i>
+
             </a>
 
         </div>
@@ -174,7 +195,7 @@
                     <i class="fas fa-brain"></i>
                 </div>
 
-                <h4>AI & Generative AI</h4>
+                <h4>Generative AI</h4>
 
                 <p>
                     LLMs • RAG • AI Agents • Prompt Engineering
@@ -220,9 +241,7 @@
         <div class="skills-grid">
 
             <div class="skill-card">
-
                 <i class="fas fa-robot"></i>
-
                 <h3>Generative AI</h3>
 
                 <div class="tags">
@@ -233,14 +252,11 @@
                     <span>Gemini</span>
                     <span>OpenAI API</span>
                 </div>
-
             </div>
 
 
             <div class="skill-card">
-
                 <i class="fas fa-link"></i>
-
                 <h3>AI Frameworks</h3>
 
                 <div class="tags">
@@ -248,14 +264,11 @@
                     <span>LlamaIndex</span>
                     <span>Streamlit</span>
                 </div>
-
             </div>
 
 
             <div class="skill-card">
-
                 <i class="fas fa-database"></i>
-
                 <h3>Data & Retrieval</h3>
 
                 <div class="tags">
@@ -266,14 +279,11 @@
                     <span>Pandas</span>
                     <span>NumPy</span>
                 </div>
-
             </div>
 
 
             <div class="skill-card">
-
                 <i class="fas fa-chart-simple"></i>
-
                 <h3>Machine Learning</h3>
 
                 <div class="tags">
@@ -283,14 +293,11 @@
                     <span>Classification</span>
                     <span>Scikit-learn</span>
                 </div>
-
             </div>
 
 
             <div class="skill-card">
-
                 <i class="fab fa-python"></i>
-
                 <h3>Programming</h3>
 
                 <div class="tags">
@@ -298,14 +305,11 @@
                     <span>Java</span>
                     <span>HTML</span>
                 </div>
-
             </div>
 
 
             <div class="skill-card">
-
                 <i class="fas fa-chart-pie"></i>
-
                 <h3>Analytics & Tools</h3>
 
                 <div class="tags">
@@ -316,7 +320,6 @@
                     <span>Git</span>
                     <span>VS Code</span>
                 </div>
-
             </div>
 
         </div>
@@ -338,8 +341,8 @@
         </div>
 
         <p class="section-description">
-            Some of the AI and Machine Learning applications
-            I have worked on.
+            AI and Machine Learning applications developed
+            to solve practical problems.
         </p>
 
 
@@ -393,14 +396,23 @@
                 </ul>
 
                 <div class="project-tech">
-
                     <span>Python</span>
                     <span>Gemini</span>
                     <span>RAG</span>
                     <span>Qdrant</span>
                     <span>Streamlit</span>
-
                 </div>
+
+                <!-- Replace URL with actual project repository -->
+                <a href="#"
+                   class="project-link"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <i class="fab fa-github"></i>
+                    View Project
+
+                </a>
 
             </article>
 
@@ -452,16 +464,24 @@
                 </ul>
 
                 <div class="project-tech">
-
                     <span>Python</span>
                     <span>XGBoost</span>
                     <span>ML</span>
                     <span>Streamlit</span>
-
                 </div>
 
-            </article>
+                <!-- Replace URL with actual project repository -->
+                <a href="#"
+                   class="project-link"
+                   target="_blank"
+                   rel="noopener noreferrer">
 
+                    <i class="fab fa-github"></i>
+                    View Project
+
+                </a>
+
+            </article>
 
         </div>
 
@@ -481,11 +501,8 @@
             <h2>Experience</h2>
         </div>
 
-
         <div class="timeline">
 
-
-            <!-- EXPERIENCE 1 -->
 
             <div class="timeline-item">
 
@@ -519,21 +536,17 @@
                     </p>
 
                     <div class="experience-tags">
-
                         <span>Gemini</span>
                         <span>LangChain</span>
                         <span>RAG</span>
                         <span>Neo4j</span>
                         <span>XGBoost</span>
-
                     </div>
 
                 </div>
 
             </div>
 
-
-            <!-- EXPERIENCE 2 -->
 
             <div class="timeline-item">
 
@@ -554,26 +567,22 @@
                     </h4>
 
                     <p>
-                        Worked on data analysis and organization
-                        tasks, built classification models and
-                        created dashboards using Power BI.
+                        Worked on data analysis and organization tasks,
+                        built classification models and created
+                        dashboards using Power BI.
                     </p>
 
                     <div class="experience-tags">
-
                         <span>Python</span>
                         <span>Pandas</span>
                         <span>Machine Learning</span>
                         <span>Power BI</span>
-
                     </div>
 
                 </div>
 
             </div>
 
-
-            <!-- EXPERIENCE 3 -->
 
             <div class="timeline-item">
 
@@ -594,15 +603,14 @@
                     </h4>
 
                     <p>
-                        Managed project timelines, supported the
-                        adoption of engineering software and
-                        collaborated with cross-functional teams.
+                        Managed project timelines, supported adoption
+                        of engineering software and collaborated with
+                        cross-functional teams.
                     </p>
 
                 </div>
 
             </div>
-
 
         </div>
 
@@ -621,7 +629,6 @@
             <span>05</span>
             <h2>Certifications</h2>
         </div>
-
 
         <div class="certifications-grid">
 
@@ -647,7 +654,8 @@
                     </p>
 
                     <p class="certificate-score">
-                        Assessment Score: <strong>88%</strong>
+                        Assessment Score:
+                        <strong>88%</strong>
                     </p>
 
                 </div>
@@ -702,7 +710,6 @@
             <span>06</span>
             <h2>Education</h2>
         </div>
-
 
         <div class="education-card">
 
@@ -775,16 +782,17 @@
             </a>
 
             <a href="https://github.com/saivardhanb"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
 
                 <i class="fab fa-github"></i>
                 GitHub
 
             </a>
 
-            <!-- Replace with your actual LinkedIn -->
-            <a href="https://www.linkedin.com/"
-               target="_blank">
+            <a href="https://www.linkedin.com/in/sai-vardhan-bathula-2b511b36b/"
+               target="_blank"
+               rel="noopener noreferrer">
 
                 <i class="fab fa-linkedin"></i>
                 LinkedIn

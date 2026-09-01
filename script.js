@@ -5,14 +5,16 @@
 const menuBtn = document.getElementById("menuBtn");
 const navMenu = document.getElementById("navMenu");
 
-menuBtn.addEventListener("click", () => {
+if (menuBtn && navMenu) {
 
-    navMenu.classList.toggle("active");
+    menuBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
 
-});
+}
 
 
-// Close mobile menu after clicking a link
+// Close menu when clicking navigation links
 
 const navLinks = document.querySelectorAll("#navMenu a");
 
@@ -31,8 +33,34 @@ navLinks.forEach(link => {
 // CURRENT YEAR
 // =========================
 
-document.getElementById("year").textContent =
-    new Date().getFullYear();
+const yearElement = document.getElementById("year");
+
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
+
+
+// =========================
+// NAVBAR ON SCROLL
+// =========================
+
+window.addEventListener("scroll", () => {
+
+    const navbar = document.querySelector(".navbar");
+
+    if (!navbar) return;
+
+    if (window.scrollY > 50) {
+
+        navbar.style.background = "rgba(8,11,18,0.95)";
+
+    } else {
+
+        navbar.style.background = "rgba(8,11,18,0.75)";
+
+    }
+
+});
 
 
 // =========================
@@ -63,32 +91,8 @@ const observer = new IntersectionObserver(
 
 );
 
-
 sections.forEach(section => {
 
     observer.observe(section);
-
-});
-
-
-// =========================
-// NAVBAR BACKGROUND
-// =========================
-
-window.addEventListener("scroll", () => {
-
-    const navbar = document.querySelector(".navbar");
-
-    if (window.scrollY > 50) {
-
-        navbar.style.background =
-            "rgba(8,11,18,0.95)";
-
-    } else {
-
-        navbar.style.background =
-            "rgba(8,11,18,0.75)";
-
-    }
 
 });
