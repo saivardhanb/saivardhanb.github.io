@@ -14,7 +14,7 @@ if (menuBtn && navMenu) {
 }
 
 
-// Close menu when clicking navigation links
+// Close mobile menu
 
 const navLinks = document.querySelectorAll("#navMenu a");
 
@@ -52,11 +52,13 @@ window.addEventListener("scroll", () => {
 
     if (window.scrollY > 50) {
 
-        navbar.style.background = "rgba(8,11,18,0.95)";
+        navbar.style.background =
+            "rgba(8,11,18,0.95)";
 
     } else {
 
-        navbar.style.background = "rgba(8,11,18,0.75)";
+        navbar.style.background =
+            "rgba(8,11,18,0.75)";
 
     }
 
